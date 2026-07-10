@@ -1,0 +1,406 @@
+/* ======================================================
+   FOR ALMAAAA ❤️
+   Made by Angger
+====================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    overflow-x:hidden;
+
+    background:linear-gradient(
+        180deg,
+        #ff5c8d,
+        #ff89b5,
+        #ffd1dc
+    );
+
+    color:white;
+
+}
+
+/* ======================================= */
+/* LOADER */
+/* ======================================= */
+
+#loader{
+
+position:fixed;
+
+left:0;
+
+top:0;
+
+width:100%;
+
+height:100%;
+
+background:#ff5c8d;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:99999;
+
+transition:.8s;
+
+}
+
+.loader-heart{
+
+font-size:80px;
+
+animation:beat 1s infinite;
+
+}
+
+@keyframes beat{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.2);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+/* ======================================= */
+
+#hero{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+position:relative;
+
+text-align:center;
+
+padding:30px;
+
+background:
+
+linear-gradient(
+rgba(255,105,180,.25),
+rgba(255,192,203,.4)
+);
+
+}
+
+.overlay{
+
+position:absolute;
+
+width:100%;
+
+height:100%;
+
+backdrop-filter:blur(5px);
+
+}
+
+.hero-content{
+
+position:relative;
+
+z-index:2;
+
+max-width:700px;
+
+}
+
+.hero-content h3{
+
+font-weight:400;
+
+font-size:22px;
+
+opacity:.9;
+
+}
+
+.hero-content h1{
+
+font-size:70px;
+
+margin:20px 0;
+
+font-weight:800;
+
+text-shadow:0 8px 25px rgba(0,0,0,.2);
+
+}
+
+.hero-content p{
+
+font-size:22px;
+
+line-height:1.8;
+
+}
+
+#startButton{
+
+margin-top:40px;
+
+padding:18px 45px;
+
+font-size:20px;
+
+border:none;
+
+border-radius:50px;
+
+background:white;
+
+color:#ff4f8f;
+
+cursor:pointer;
+
+font-weight:700;
+
+transition:.35s;
+
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+#startButton:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 15px 30px rgba(0,0,0,.3);
+
+}
+
+/* ======================================= */
+
+.glass{
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(20px);
+
+border-radius:30px;
+
+padding:40px;
+
+box-shadow:
+
+0 10px 40px rgba(0,0,0,.15);
+
+}
+
+/* ======================================= */
+
+.photo-section{
+
+padding:120px 20px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.main-photo{
+
+width:340px;
+
+max-width:100%;
+
+border-radius:25px;
+
+border:8px solid white;
+
+box-shadow:
+
+0 20px 50px rgba(0,0,0,.25);
+
+transition:.5s;
+
+cursor:pointer;
+
+}
+
+.main-photo:hover{
+
+transform:
+
+rotate(-2deg)
+
+scale(1.04);
+
+}
+
+.photo-section h2{
+
+margin-top:25px;
+
+font-size:45px;
+
+}
+
+.photo-section p{
+
+margin-top:20px;
+
+font-size:20px;
+
+line-height:1.9;
+
+}
+
+/* ======================================= */
+
+.love-section{
+
+padding:120px 20px;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.love-card{
+
+max-width:850px;
+
+text-align:center;
+
+}
+
+.love-card h2{
+
+font-size:42px;
+
+margin-bottom:30px;
+
+}
+
+#typingText{
+
+font-size:22px;
+
+line-height:2;
+
+white-space:pre-line;
+
+}
+
+/* ======================================= */
+
+.gallery{
+
+padding:120px 20px;
+
+text-align:center;
+
+}
+
+.gallery h2{
+
+font-size:45px;
+
+}
+
+.subtitle{
+
+margin-top:15px;
+
+font-size:20px;
+
+opacity:.9;
+
+}
+
+.gallery-grid{
+
+margin-top:60px;
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:35px;
+
+}
+
+.photo-card{
+
+background:white;
+
+color:#444;
+
+border-radius:20px;
+
+padding:15px;
+
+box-shadow:
+
+0 15px 35px rgba(0,0,0,.15);
+
+transition:.4s;
+
+}
+
+.photo-card:hover{
+
+transform:
+
+translateY(-10px)
+
+rotate(-2deg);
+
+}
+
+.photo-card img{
+
+width:100%;
+
+border-radius:15px;
+
+}
+
+.photo-card p{
+
+padding:18px;
+
+font-size:17px;
+
+line-height:1.7;
+
+}
