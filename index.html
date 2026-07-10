@@ -1,1 +1,525 @@
-<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Untuk Sayang</title><style>body{margin:0;display:flex;justify-content:center;align-items:center;height:100vh;background:linear-gradient(135deg,#ff7eb3,#ff758c);font-family:Arial;color:#fff}.c{max-width:700px;background:rgba(255,255,255,.15);padding:30px;border-radius:20px;text-align:center}button{padding:12px 20px;border-radius:30px;border:0}#m{display:none}</style></head><body><div class='c'><h1>❤️ Hai Sayang (Almaaaa)</h1><p>Aku tahu hari ini mungkin melelahkan. Jangan lupa, ada Angger yang selalu mendoakan dan menyayangimu.</p><button onclick="m.style.display='block'">Klik di sini ❤️</button><div id='m'><h2>Aku Sayang Kamu</h2><p>Bad mood boleh datang, tapi jangan biarkan itu membuatmu lupa betapa berharganya dirimu. Terima kasih sudah hadir di hidupku. Semoga setelah membuka halaman ini kamu bisa sedikit tersenyum. ❤️<br><br>- Angger</p></div></div><script>setInterval(()=>{let h=document.createElement('div');h.innerHTML='❤️';h.style.cssText='position:fixed;left:'+Math.random()*100+'vw;top:100vh;font-size:'+(20+Math.random()*20)+'px;transition:6s linear';document.body.appendChild(h);setTimeout(()=>{h.style.top='-10vh';h.style.opacity=0},10);setTimeout(()=>h.remove(),6200)},300)</script></body></html>
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Untuk Sayang ❤️</title>
+
+<meta name="theme-color" content="#ff5c8d">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ============================= -->
+<!-- LOADING -->
+<!-- ============================= -->
+
+<div id="loader">
+
+<div class="loader-heart">
+
+❤️
+
+</div>
+
+<h2>
+
+Loading...
+
+</h2>
+
+<p>
+
+Menyiapkan kejutan...
+
+</p>
+
+</div>
+
+<!-- ============================= -->
+<!-- MUSIC -->
+<!-- ============================= -->
+
+<audio id="bgMusic" loop>
+
+<source src="assets/music.mp3" type="audio/mpeg">
+
+</audio>
+
+<!-- ============================= -->
+<!-- FLOATING HEARTS -->
+<!-- ============================= -->
+
+<div id="hearts"></div>
+
+<!-- ============================= -->
+<!-- HERO -->
+<!-- ============================= -->
+
+<section id="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content animate__animated animate__fadeIn">
+
+<h3>
+
+Untuk Orang Yang Paling Cantik
+
+</h3>
+
+<h1>
+
+Almaaaa ❤️
+
+</h1>
+
+<p>
+
+Kalau hari ini kamu lagi bad mood...
+
+aku cuma mau bilang...
+
+masih ada seseorang yang selalu sayang sama kamu.
+
+</p>
+
+<button id="startButton">
+
+💌 Buka Hadiah
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ============================= -->
+<!-- MAIN -->
+<!-- ============================= -->
+
+<main id="mainContent">
+
+<section class="photo-section">
+
+<div class="glass">
+
+<img
+
+src="foto_bareng.jpeg"
+
+class="main-photo"
+
+alt="Foto Kita"
+
+>
+
+<h2>
+
+Hai Sayang 🥺❤️
+
+</h2>
+
+<p>
+
+Lihat foto ini sebentar ya...
+
+Karena setiap kali aku melihatnya,
+
+aku selalu bersyukur...
+
+bisa kenal sama kamu.
+
+</p>
+
+
+</div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- LOVE LETTER -->
+<!-- ========================================= -->
+
+<section class="love-section">
+
+    <div class="container">
+
+        <div class="love-card" data-aos="zoom-in">
+
+            <h2>💌 Surat Untuk Almaaaa</h2>
+
+            <p id="typingText"></p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- GALLERY -->
+<!-- ========================================= -->
+
+<section class="gallery">
+
+<h2 data-aos="fade-up">
+
+📸 Foto Kita
+
+</h2>
+
+<p class="subtitle">
+
+Setiap foto punya cerita yang membuatku tersenyum.
+
+</p>
+
+<div class="gallery-grid">
+
+<div class="photo-card" data-aos="fade-up">
+
+<img src="foto_bareng.jpeg">
+
+<p>
+
+❤️ Ini salah satu foto favoritku.
+
+Karena di sini kamu cantik banget.
+
+</p>
+
+</div>
+
+<div class="photo-card" data-aos="fade-up" data-aos-delay="200">
+
+<img src="foto_bareng.jpeg">
+
+<p>
+
+🥺 Semoga kita bisa terus membuat foto-foto seperti ini.
+
+</p>
+
+</div>
+
+<div class="photo-card" data-aos="fade-up" data-aos-delay="400">
+
+<img src="foto_bareng.jpeg">
+
+<p>
+
+😂 Senyum kamu benar-benar bikin hariku jadi lebih baik.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- FUN SECTION -->
+<!-- ========================================= -->
+
+<section class="fun">
+
+<div class="glass">
+
+<h2>
+
+🤭 Aku Mau Tanya...
+
+</h2>
+
+<p>
+
+Menurut kamu...
+
+Siapa yang paling ganteng?
+
+</p>
+
+<div class="button-group">
+
+<button id="yesBtn">
+
+😍 Angger
+
+</button>
+
+<button id="noBtn">
+
+🙈 Bukan Angger
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- VIRTUAL HUG -->
+<!-- ========================================= -->
+
+<section class="hug">
+
+<div class="glass">
+
+<h2>
+
+🤗 Peluk Virtual
+
+</h2>
+
+<p>
+
+Kalau hari ini capek...
+
+Klik tombol di bawah ya.
+
+</p>
+
+<button id="hugButton">
+
+🤗 Peluk Aku
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- LOVE METER -->
+<!-- ========================================= -->
+
+<section class="meter">
+
+<h2>
+
+❤️ Love Meter ❤️
+
+</h2>
+
+<div class="progress">
+
+<div id="loveFill">
+
+100%
+
+</div>
+
+</div>
+
+<p>
+
+Aku sayang kamu...
+
+100%
+
+Besok?
+
+Tetap 100%
+
+Lusa?
+
+1000%
+
+❤️
+
+</p>
+
+</section>
+
+<!-- ========================================= -->
+<!-- FINAL MESSAGE -->
+<!-- ========================================= -->
+
+<section class="final-section">
+
+    <div class="glass final-card" data-aos="zoom-in">
+
+        <h1>❤️ I LOVE YOU ❤️</h1>
+
+        <h2>Almaaaa</h2>
+
+        <p>
+
+            Terima kasih sudah hadir di hidupku.
+
+            <br><br>
+
+            Aku tahu aku belum menjadi laki-laki yang sempurna.
+
+            Kadang aku membuatmu kesal.
+
+            Kadang aku membuatmu menunggu.
+
+            Kadang aku terlalu banyak bercanda.
+
+            <br><br>
+
+            Tapi...
+
+            satu hal yang tidak pernah berubah...
+
+            <br><br>
+
+            Aku selalu memilih kamu.
+
+            ❤️
+
+            <br><br>
+
+            Semoga setelah membuka halaman ini,
+
+            bad mood kamu sedikit berkurang.
+
+            <br><br>
+
+            Kalau masih belum...
+
+            nanti aku peluk langsung ya 🤗❤️
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- BUTTON LUCU -->
+<!-- ========================================= -->
+
+<section class="game-section">
+
+<div class="glass">
+
+<h2>
+
+🥺 Masih Ngambek?
+
+</h2>
+
+<p>
+
+Kalau iya...
+
+coba pencet tombol ini 😆
+
+</p>
+
+<div class="btn-area">
+
+<button id="runButton">
+
+😤 Masih Ngambek
+
+</button>
+
+<button id="loveButton">
+
+🥰 Aku Udah Senyum
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- POPUP -->
+<!-- ========================================= -->
+
+<div id="popup" class="popup">
+
+<div class="popup-content">
+
+<h2>
+
+🤗 YEEEE!!
+
+</h2>
+
+<p>
+
+Aku senang akhirnya kamu senyum.
+
+Semoga hari kamu jadi lebih indah.
+
+❤️
+
+</p>
+
+<button onclick="closePopup()">
+
+Tutup
+
+</button>
+
+</div>
+
+</div>
+
+</main>
+
+<footer>
+
+<p>
+
+Made with ❤️ by
+
+<b>Angger</b>
+
+for
+
+<b>Almaaaa</b>
+
+</p>
+
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+AOS.init({
+
+duration:1000,
+
+once:true
+
+});
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+  
