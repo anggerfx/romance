@@ -404,3 +404,363 @@ font-size:17px;
 line-height:1.7;
 
 }
+
+/* ======================================= */
+/* FUN SECTION */
+/* ======================================= */
+
+.fun,
+.hug,
+.meter,
+.final-section,
+.game-section{
+
+    padding:120px 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.fun .glass,
+.hug .glass,
+.meter,
+.final-card,
+.game-section .glass{
+
+    max-width:900px;
+    width:100%;
+    text-align:center;
+
+}
+
+.fun h2,
+.hug h2,
+.final-card h1,
+.meter h2{
+
+    font-size:42px;
+    margin-bottom:20px;
+
+}
+
+.fun p,
+.hug p,
+.final-card p,
+.meter p{
+
+    font-size:20px;
+    line-height:1.9;
+
+}
+
+/* ======================================= */
+/* BUTTON */
+/* ======================================= */
+
+.button-group,
+.btn-area{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.button-group button,
+.btn-area button,
+#hugButton{
+
+    padding:16px 35px;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+    color:#ff4f8f;
+
+    background:white;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+
+}
+
+.button-group button:hover,
+.btn-area button:hover,
+#hugButton:hover{
+
+    transform:translateY(-8px) scale(1.05);
+
+    box-shadow:0 20px 35px rgba(0,0,0,.3);
+
+}
+
+/* ======================================= */
+/* LOVE METER */
+/* ======================================= */
+
+.progress{
+
+    width:100%;
+
+    height:32px;
+
+    background:rgba(255,255,255,.25);
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    margin:35px auto;
+
+}
+
+#loveFill{
+
+    width:100%;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        #ff4f8f,
+        #ff9ac4
+    );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:bold;
+
+}
+
+/* ======================================= */
+/* POPUP */
+/* ======================================= */
+
+.popup{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.6);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999;
+
+}
+
+.popup-content{
+
+    width:90%;
+
+    max-width:500px;
+
+    background:white;
+
+    color:#444;
+
+    border-radius:25px;
+
+    padding:40px;
+
+    text-align:center;
+
+    animation:popup .4s;
+
+}
+
+.popup-content h2{
+
+    color:#ff4f8f;
+
+    font-size:40px;
+
+}
+
+.popup-content button{
+
+    margin-top:30px;
+
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#ff4f8f;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+@keyframes popup{
+
+from{
+
+opacity:0;
+
+transform:scale(.7);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+/* ======================================= */
+/* HEARTS */
+/* ======================================= */
+
+.heart{
+
+    position:fixed;
+
+    bottom:-60px;
+
+    color:white;
+
+    animation:fly linear forwards;
+
+    pointer-events:none;
+
+    z-index:1;
+
+}
+
+@keyframes fly{
+
+0%{
+
+transform:
+translateY(0)
+rotate(0deg);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:
+translateY(-120vh)
+rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+/* ======================================= */
+/* FOOTER */
+/* ======================================= */
+
+footer{
+
+    padding:40px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(15px);
+
+}
+
+/* ======================================= */
+/* RESPONSIVE */
+/* ======================================= */
+
+@media(max-width:768px){
+
+.hero-content h1{
+
+font-size:48px;
+
+}
+
+.hero-content p{
+
+font-size:18px;
+
+}
+
+.photo-section h2{
+
+font-size:34px;
+
+}
+
+.photo-section p,
+
+.fun p,
+
+.hug p,
+
+.final-card p,
+
+#typingText{
+
+font-size:18px;
+
+}
+
+.main-photo{
+
+width:90%;
+
+}
+
+.button-group,
+
+.btn-area{
+
+flex-direction:column;
+
+}
+
+.button-group button,
+
+.btn-area button,
+
+#hugButton{
+
+width:100%;
+
+}
+
+}
